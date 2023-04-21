@@ -5,15 +5,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    <title>Cursos de Alura</title>
+    <title>lista de cursos de DevOPS de Alura</title>
     <link rel="stylesheet" href="reset.css"> <!---- archivo que reinicia las propiedades de la pagina-->
 
     <body>
          <ul>
-             <li> Vagrant </li>
-             <li> Docker </li>
-             <li> Ansible </li>
-             <li> Integración continua  hay vamos viendo </li>
+             <li> Vagrant: gerenciando maquinas virtuales</li>
+             <li> Docker: creando containers sin dolor de cabeza </li>
+             <li> Ansible: su infra estructura coo código </li>
+             <li> Integración continua: madures y productividad en el desarrollo </li>
+             <li> Kubernetes: introducción a la orquestación de containers </li>
          </ul>
     </body>
     </html>
@@ -21,16 +22,17 @@
 
  <!-- comandos dentro del la ventana de comandos de GIT
 # tener en cuenta que para poder crear el servidor local dentro de la pc el nombre de usuario de la pc donde estamos trabajando y la ruta que tenemos que pegar para hacerlo no puede tener espacios
+# git init de esta manera estamos indicando ue se a iniciado a trabajar en nuestro código
 # git status comando para verificar el estado de nuestro repositorio
-# git init nombre del archivo  de esta manera estamos agregando un archivo en particular de la carpeta donde nos encontramos
-# git init . de esta manera estamos cargando todos los archivos dentro de la carpeta en la que nos encontramos
+# git init add nombre del archivo  de esta manera estamos agregando un archivo en particular de la carpeta donde nos encontramos
+# git init add . de esta manera estamos cargando todos los archivos dentro de la carpeta en la que nos encontramos
 # git commit -m "comentarioS" con este comando estamos indicando ue vamos a dejar un comentario indicando ue se realizo un cambio en el repositorio o en los archivos dentro de el
 # git config --global user.email "correo" comando para configurar nuestro usuario den ventana de comandos git
 # rm -f ./.git/index.lock comando maestro para quitar error chimbo
 # git log comando para ver el historial de nuestro repositorio
 # git log -p ver historial mas detallado
 # :q salir 
-# .gitignore recuerda que para ignorar un archivo ue no quieres ue sea monitoreado por git debes agregar este archivo a tu carpeta y dentro de el debes de colocarla ruta que deseas ignorar
+# .gitignore recuerda que para ignorar un archivo ue no quieres ue sea monitorear por git debes agregar este archivo a tu carpeta y dentro de el debes de colocarla ruta que deseas ignorar
 # git remote set-url origin [new-url] comando para actualizar la url de git
 # git remote remove origin comando para eliminar origin
 # (1) rm -rf .git/
@@ -38,6 +40,22 @@
 (3) git remote add origin https://repository.remote.url
 (4) git commit -m “Commit message”
 (5) git push -f origin master con esa secuencia de comandos puedes tratar de subir ls actualizaciones al repositorio si estas teniendo errores
+# git branch nos muestra la rema en la ue estamos
+# git branch (nombre de rama a crear) asi se crea una nueva branch
+# git checkout (nombre de rama)
+# git merge (nombre de la rama de donde queremos traer las actualizaciones) para actualizar el código o trabajo en la rama principal desde ramas de trabajo
+# git rebase (nombre de la rama de donde queremos traer las actualizaciones a nuestra rama principal) pra actualizar rl código de trabajo pero con todo el contenido comentarios y demás
+# git pull comando para traer el archivo actualizado desde el servidor y asi poder trabajar con el código de manera actualizada
+# git restore con este comando revertimos una acción echa antes de hacer add .
+# git restore --staged con este comando revertimos una acción echa después de hacer add . pero antes de un commit
+# git revert con este comando revertimos una acción echa después de aver dado un commit -m ""
+# git stash con este comando guardamos en un lugar temporal los cambios echos a nuestro código para poder continuar después y asi evitamos hacer un git commit -m ya que hay que recordar que no es de buena practica guardar y comentar un código que no sirve
+# git stash list con este comando vemos la lista de cambios que emos dejado pendientes y asi podemos continuarlas y eventualmente guardarlas
+# git diff este comando sirve para identificar los cambios que aun no se an agregado a nuestro codigo de manera permanente
+# git diff (id comentario)..(id comentario) con este comando estamos viendo los cambios echos en nuestro código desde un comentario hasta otro 
+# git tag con este comando estamos viendo que versiones hay de nuestro proyecto
+# git tag -a (nombre) - m "mensaje" de esta manera estamos guardando una version de nuestro programa o codigo
+# git tag -d (nombre) con este comando eliminamos un tag
 
 
 -->
