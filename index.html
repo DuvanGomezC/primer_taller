@@ -33,10 +33,11 @@
 # .gitignore recuerda que para ignorar un archivo ue no quieres ue sea monitoreado por git debes agregar este archivo a tu carpeta y dentro de el debes de colocarla ruta que deseas ignorar
 # git remote set-url origin [new-url] comando para actualizar la url de git
 # git remote remove origin comando para eliminar origin
-# 1 git init
-2 git add -A
-3 git commit -m 'Fix bad repo'
-4 git push con esa secuencia de comandos puedes tratar de subir ls actualizaciones al repositorio si estas teniendo errores
+# (1) rm -rf .git/
+(2) git init
+(3) git remote add origin https://repository.remote.url
+(4) git commit -m “Commit message”
+(5) git push -f origin master con esa secuencia de comandos puedes tratar de subir ls actualizaciones al repositorio si estas teniendo errores
 
 
 -->
